@@ -3,4 +3,5 @@ pytest_cache
 __pycache__/
 **idea
 .DS_Store
+git_token.txt
 

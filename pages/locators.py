@@ -8,7 +8,7 @@ class BasePageLocators():
     NEWSLETTER_FORM_REQUEST = (By.CLASS_NAME, "newsletter-stroke")
     SUCCESS_MESSAGE_OF_FOLLOWING_NEWSLETTERS = (By.CLASS_NAME, "sweet-alert.showSweetAlert.visible")
     OK_BUTTON_FOR_CLOSE_SUCCESS_MESSAGE = (By.CLASS_NAME, "confirm")
-    OPENED_NEWSLETTER_FORM = (By.CSS_SELECTOR, "[id='newsletter-popup'][style='display: block;']")
+    OPENED_NEWSLETTER_FORM = (By.CLASS_NAME, "top-newsletter-enabled")
     EMAIL_FOR_NEWSLETTER = (By.ID, "newsletterpopup_email")
     NEWSLETTER_SUBMIT_BUTTON = (By.ID, "newsletterpopup_button")
     MAIN_PAGE_LINK = (By.CLASS_NAME, "title-area")

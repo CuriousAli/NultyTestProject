@@ -90,7 +90,6 @@ class BasePage():
         assert self.is_element_present(*BasePageLocators.OPENED_BROCHURE_FORM), "Brochure form didn't appear"
 
     def success_of_requesting_brochure_footer(self, name, email, message):
-        self.browser.find_element(*BasePageLocators.BROCHURE_FORM_REQUEST_BUTTON_FOOTER).click()
         self.browser.find_element(*BasePageLocators.NAME_BROCHURE_FORM).send_keys(name)
         self.browser.find_element(*BasePageLocators.EMAIL_BROCHURE_FORM).send_keys(email)
         self.browser.find_element(*BasePageLocators.MESSAGE_BROCHURE_FORM).send_keys(message)
@@ -98,7 +97,6 @@ class BasePage():
         assert self.is_element_present(*BasePageLocators.SUCCESS_MESSAGE_OF_REQUESTING_BROCHURE)
 
     def success_of_requesting_brochure_header(self, name, email, message):
-        self.browser.find_element(*BasePageLocators.BROCHURE_FORM_REQUEST_HEADER).click()
         self.browser.find_element(*BasePageLocators.NAME_BROCHURE_FORM).send_keys(name)
         self.browser.find_element(*BasePageLocators.EMAIL_BROCHURE_FORM).send_keys(email)
         self.browser.find_element(*BasePageLocators.MESSAGE_BROCHURE_FORM).send_keys(message)
