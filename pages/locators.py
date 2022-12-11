@@ -29,25 +29,34 @@ class BasePageLocators():
 
 class MainPageLocators():
     PLAY_VIDEO_BUTTON = (By.CLASS_NAME, "play-video-button")
-    FULLSCREEN_VIDEO = (By.CSS_SELECTOR, "[style='display: inline; opacity: 1;']")
+    FULLSCREEN_VIDEO = (By.CSS_SELECTOR, '[style="display: inline; opacity: 1;"]')
     GARRISON_PAGE_LINK = (By.CLASS_NAME, "small-12.featured-project.columns.effect-5.effect-5-small.blue.box-two-third")
     MIDTOWN_MALL_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[1]/div/div[2]/a")
     CARTON_TOWER_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[1]/div/div[3]/a")
-    WORLD_ARCHITECTURE_FEST_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[2]/div/div[1]/a")
-    DUBAI_DESIGN_WEEK_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[2]/div/div[2]/a")
-    BROWNS_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[1]/a")
-    HAKKASAN_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[2]/a")
-    HARD_ROCK_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[3]/a")
-    NIKE_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[4]/a")
-    THE_RITZ_CARLTON_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[5]/a")
+    WORLD_ARCHITECTURE_FEST_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[2]/div/div[1]/a/div[1]")
+    DUBAI_DESIGN_WEEK_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[6]/div/div/div[2]/div/div[2]/a/div[1]")
+    BROWNS_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[1]/a/img[1]")
+    HAKKASAN_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[2]/a/img[1]")
+    HARD_ROCK_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[3]/a/img[1]")
+    NIKE_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[4]/a/img[1]")
+    THE_RITZ_CARLTON_PAGE_LINK = (By.XPATH, "/html/body/section[1]/div[7]/div/ul/li[5]/a/img[1]")
 
 
 class ProjectsPageLocators():
+
     pass
 
 
 class AboutPageLocators():
+    COMPANY_ARTICLE_LINK = (By.CLASS_NAME, "tab-title")
+    PROCESS_ARTICLE_LINK = (By.CLASS_NAME, "tab-title.process")
+    AWARDS_ARTICLE_LINK = (By.CLASS_NAME, "tab-title.awards")
+    CPDS_ARTICLE_LINK = (By.CLASS_NAME, "tab-title.cpds")
+    COMPANY_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.active")
+    PROCESS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.process.active")
+    AWARDS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.awards.active")
     CPDS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.cpds.active")
+    SCROLL_TO_OBJECT = (By.XPATH, "//*[@id='panel0']/div[1]/div/h3")
 
 
 class BlogPageLocators():
