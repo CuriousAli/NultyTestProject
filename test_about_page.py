@@ -41,3 +41,15 @@ def test_appearence_of_company_article(browser):
     page.open()
     page.should_be_company_article()
 
+
+def test_appearence_of_success_message_of_sended_cpd_form(browser):
+    name = NAME
+    email = EMAIL
+    phone_number = PHONE_NUMBER
+    message = MESSAGE
+    link = "https://www.nultylighting.co.uk/about/"
+    page = AboutPage(browser, link)
+    page.open()
+    page.should_be_cpds_article()
+    page.should_be_success_message_after_sending_of_cpd_form(name, email, phone_number, message)
+

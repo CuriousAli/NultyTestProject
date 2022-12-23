@@ -56,8 +56,15 @@ class AboutPageLocators():
     PROCESS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.process.active")
     AWARDS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.awards.active")
     CPDS_ARTICLE_ACTIVE = (By.CLASS_NAME, "tab-title.cpds.active")
-    SCROLL_TO_OBJECT = (By.XPATH, "//*[@id='panel0']/div[1]/div/h3")
-
+    SCROLL_TO_ARTICLES = (By.XPATH, "//*[@id='panel0']/div[1]/div/h3")
+    NAME_CPD_FORM = (By.ID, "input_7_1")
+    EMAIL_CPD_FORM = (By.ID, "input_7_2")
+    PHONE_NUMBER_CPD_FORM = (By.ID, "input_7_3")
+    INTERESTED_IN_TEXT_CPD_FORM = (By.ID, "input_7_12")
+    CPD_SUBMIT_BUTTON = (By.ID, "gform_submit_button_7")
+    SUCCESS_MESSAGE_OF_SENDED_CPD_FORM = (By.ID, "gform_confirmation_message_7")
+    SCROLL_TO_CPD_FORM = (By.CLASS_NAME, "col-right")
+    SCROLL_TO_SUBMIT_BUTTON = (By.CLASS_NAME, "owl-carousel")
 
 class BlogPageLocators():
     pass
