@@ -84,7 +84,13 @@ class BlogPageLocators():
 
 
 class ContactPageLocators():
-    pass
+    CONTACT_FORM_NAME = (By.ID, "input_8_1")
+    CONTACT_FORM_EMAIL = (By.ID, "input_8_2")
+    CONTACT_FORM_MESSAGE = (By.ID, "input_8_9")
+    CONTACT_FORM_SUBMIT_BUTTON = (By.ID, "gform_submit_button_8")
+    SUCCESS_MESSAGE_OF_SENDED_CONTACT_FORM = (By.CLASS_NAME, "gform_confirmation_message_8.gforms_confirmation_message")
+    SCROLL_FOR_PRESS_SUBMIT_BUTTON = (By.CLASS_NAME, "brochure-section")
+
 
 
 
