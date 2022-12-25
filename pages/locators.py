@@ -43,9 +43,15 @@ class MainPageLocators():
 
 
 class ProjectsPageLocators():
-
-    pass
-
+    SECTOR_SELECTION_BAR = (By.XPATH, "//*[@id='filtered']/div/div/div/div[1]/div[2]")
+    SECTOR_SELECTION_BAR_STATUS_LOCATOR = (By.XPATH, "//*[@id='filtered']/div/div/div/div[1]")
+    SECTOR_SELECTION_BAR_FOR_SELECT = (By.XPATH, "//*[@id='filtered']/div/div/div/div[1]/div[1]/select")
+    CLIENT_SELECTION_BAR = (By.XPATH, "//*[@id='filtered']/div/div/div/div[2]/div[2]")
+    CLIENT_SELECTION_BAR_STATUS_LOCATOR = (By.XPATH, "//*[@id='filtered']/div/div/div/div[2]")
+    CLIENT_SELECTION_BAR_FOR_SELECT = (By.XPATH, "//*[@id='filtered']/div/div/div/div[2]/div[1]/select")
+    RETAIL_SECTOR = (By.XPATH, "//*[@id='filtered']/div/div/div/div[1]/div[3]/div/ul/li[12]")
+    WILDSTONE_CLIENT = (By.XPATH, "//*[@id='filtered']/div/div/div/div[2]/div[3]/div/ul/li[68]")
+    SCROLL_TO_SELECTION_BAR = (By.CLASS_NAME, 'preced-grid')
 
 class AboutPageLocators():
     COMPANY_ARTICLE_LINK = (By.CLASS_NAME, "tab-title")

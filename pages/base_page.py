@@ -39,31 +39,31 @@ class BasePage():
 
 
     def go_to_main_page(self):
-        link = self.browser.find_element(*BasePageLocators.MAIN_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.MAIN_PAGE_LINK).click()
         assert self.browser.title == "Nulty | Lighting Design Consultants", " Not a Projects page or title has been changed"
 
     def go_to_projects_page(self):
-        link = self.browser.find_element(*BasePageLocators.PROJECTS_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.PROJECTS_PAGE_LINK).click()
         assert self.browser.title == "Projects | Nulty | Lighting Design Consultants", " Not a Projects page or title has been changed"
 
     def go_to_clients_page(self):
-        link = self.browser.find_element(*BasePageLocators.CLIENTS_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.CLIENTS_PAGE_LINK).click()
         assert self.browser.title == "Clients | Nulty | Lighting Design Consultants", " Not a Clients page or title has been changed"
 
     def go_to_about_page(self):
-        link = self.browser.find_element(*BasePageLocators.ABOUT_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.ABOUT_PAGE_LINK).click()
         assert self.browser.title == "About | Nulty | Lighting Design Consultants", " Not a About page or title has been changed"
 
     def go_to_team_page(self):
-        link = self.browser.find_element(*BasePageLocators.TEAM_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.TEAM_PAGE_LINK).click()
         assert self.browser.title == "Team | Nulty | Lighting Design Consultants", " Not a Team page or title has been changed"
 
     def go_to_blog_page(self):
-        link = self.browser.find_element(*BasePageLocators.BLOG_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.BLOG_PAGE_LINK).click()
         assert self.browser.title == "Blog | Nulty | Lighting Design Consultants", " Not a Blog page or title has been changed"
 
     def go_to_contact_page(self):
-        link = self.browser.find_element(*BasePageLocators.CONTACT_PAGE_LINK).click()
+        self.browser.find_element(*BasePageLocators.CONTACT_PAGE_LINK).click()
         assert self.browser.title == "Contact | Nulty | Lighting Design Consultants", " Not a Contact page or title has been changed"
 
 

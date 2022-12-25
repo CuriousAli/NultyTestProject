@@ -42,6 +42,7 @@ def test_appearence_of_company_article(browser):
     page.should_be_company_article()
 
 
+@pytest.mark.skip(reason="Test works")
 def test_appearence_of_success_message_of_sended_cpd_form(browser):
     name = NAME
     email = EMAIL
