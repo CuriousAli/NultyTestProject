@@ -71,7 +71,16 @@ class AboutPageLocators():
     SCROLL_TO_SUBMIT_BUTTON = (By.CLASS_NAME, "owl-carousel")
 
 class BlogPageLocators():
-    pass
+    CATEGORY_SELECTION_BAR = (By.XPATH, "//*[@id='filtered']/div/div[1]/div[2]")
+    CATEGORY_STATUS_LOCATOR = (By.XPATH, "//*[@id='filtered']/div/div[1]")
+    DATE_SELECTION_BAR = (By.XPATH, "//*[@id='filtered']/div/div[2]/div[2]")
+    DATE_STATUS_LOCATOR = (By.XPATH, "//*[@id='filtered']/div/div[2]")
+    AUTHOR_SELECTION_BAR = (By.XPATH, "//*[@id='filtered']/div/div[3]/div[2]")
+    AUTHOR_STATUS_LOCATOR = (By.XPATH, "//*[@id='filtered']/div/div[3]")
+    SCROLL_TO_SELECTION_BLOG_BAR = (By.ID, "filtered")
+    VIDEO_CATEGORY = (By.XPATH, "//*[@id='filtered']/div/div[1]/div[3]/div/ul/li[6]")
+    DATE = (By.XPATH, "//*[@id='filtered']/div/div[2]/div[3]/div/ul/li[7]")
+    AUTHOR = (By.XPATH, "//*[@id='filtered']/div/div[3]/div[3]/div/ul/li[9]")
 
 
 class ContactPageLocators():
