@@ -1,3 +1,5 @@
+import allure
+
 import pytest
 from .pages.about_page import AboutPage
 
@@ -10,7 +12,10 @@ MESSAGE = "Lorem Ipsum is simply dummy text of the printing and typesetting indu
 
 
 
-@pytest.mark.skip(reason="Test works")
+@allure.feature("page content")
+@allure.story("process article")
+@allure.severity("blocker")
+@pytest.mark.smoke
 def test_appearence_of_process_article(browser):
     link = "https://www.nultylighting.co.uk/about/"
     page = AboutPage(browser, link)
@@ -18,7 +23,10 @@ def test_appearence_of_process_article(browser):
     page.should_be_process_article()
 
 
-@pytest.mark.skip(reason="Test works")
+@allure.feature("page content")
+@allure.story("awards article")
+@allure.severity("blocker")
+@pytest.mark.smoke
 def test_appearence_of_awards_article(browser):
     link = "https://www.nultylighting.co.uk/about/"
     page = AboutPage(browser, link)
@@ -26,7 +34,10 @@ def test_appearence_of_awards_article(browser):
     page.should_be_awards_article()
 
 
-@pytest.mark.skip(reason="Test works")
+@allure.feature("page content")
+@allure.story("cpds article")
+@allure.severity("blocker")
+@pytest.mark.smoke
 def test_appearence_of_cpds_article(browser):
     link = "https://www.nultylighting.co.uk/about/"
     page = AboutPage(browser, link)
@@ -34,7 +45,10 @@ def test_appearence_of_cpds_article(browser):
     page.should_be_cpds_article()
 
 
-@pytest.mark.skip(reason="Test works")
+@allure.feature("page content")
+@allure.story("company article")
+@allure.severity("blocker")
+@pytest.mark.smoke
 def test_appearence_of_company_article(browser):
     link = "https://www.nultylighting.co.uk/about/"
     page = AboutPage(browser, link)
@@ -42,7 +56,10 @@ def test_appearence_of_company_article(browser):
     page.should_be_company_article()
 
 
-@pytest.mark.skip(reason="Test works")
+@allure.feature("form sending")
+@allure.story("cpd form")
+@allure.severity("critical")
+@pytest.mark.e2e
 def test_appearence_of_success_message_of_sended_cpd_form(browser):
     name = NAME
     email = EMAIL
